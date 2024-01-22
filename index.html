@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a1268120aa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>TaskManager <i class="fas fa-plus add-task-icon" onclick="openAddModal()"></i></h1>
+            <div class="tasks" id="tasks"></div>
+        </div>
+        <div class="intro-container">
+            <h1>Organize your work <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and life, finally.</h1>
+            <p>Become focused, organized, and calm with our TaskManager. Press <i class="fas fa-plus add-task-icon"></i> to add your task.</p>
+        </div>
+        <div class="modal1" id="addModal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeAddModal()">&times;</span>
+                <h2 id="addModalTitle">Add Task</h2>
+                <input type="text" id="newTask" placeholder="Enter Task">
+                <textarea id="newDescription" placeholder="Enter Description"></textarea>
+                <button onclick="addTask()">Add</button>
+            </div>
+        </div>
+        <div class="modal2" id="editModal">
+            <div class="modal-content2" id="editModalContent">
+                <span class="close-btn" onclick="closeEditModal()">&times;</span>
+                <h2 id="editModalTitle">Edit Task</h2>
+                <input type="text" id="editTask" placeholder="Edit Task">
+                <textarea id="editDescription" placeholder="Edit Description"></textarea>
+                <div class="task-actions">
+                    <button onclick="updateTask()">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
+
+
+
