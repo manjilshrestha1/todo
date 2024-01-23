@@ -173,21 +173,56 @@ textarea {
     margin-top: -10px;
 }
 table {
-    width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  position: relative;
+    
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+th{
+    padding: 1rem;
+    text-align: left; 
+}
+ td {
+    padding: 1rem;
     text-align: left;
-    color: #4F6F52;
 }
 
 th {
-    background-color: #f2f2f2;
-}
+    background-color: #4F6F52;
+    color: white;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 1.7rem;
+    position: sticky;
+    top: 0;
+  }
+  
+  td {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    color: #3e3e3edb;
+    font-weight: 700;
+  }
+  tr:nth-child(odd) {
+    background: #dbdbdb;
+  }
+  
+  td > div {
+    color: #aaa;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+h3 {
+    color: #4F6F52;
+    display: block;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
 
 button {
     cursor: pointer;
