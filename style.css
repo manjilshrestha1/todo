@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
 
 body {
     font-family: 'Arial', sans-serif;
@@ -172,68 +173,47 @@ textarea {
     margin-left: 10px;
     margin-top: -10px;
 }
-table {
-    border-collapse: collapse;
-  width: 100%;
-  position: relative;
-    
-}
-
-th{
-    padding: 1rem;
-    text-align: left; 
-}
- td {
-    padding: 1rem;
-    text-align: left;
-}
-
-th {
-    background-color: #4F6F52;
-    color: white;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    font-size: 1.7rem;
-    position: sticky;
-    top: 0;
-  }
-  
-  td {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    color: #3e3e3edb;
-    font-weight: 700;
-  }
-  tr:nth-child(odd) {
-    background: #dbdbdb;
-  }
-  
-  td > div {
-    color: #aaa;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  }
-h3 {
-    color: #4F6F52;
-    display: block;
-    font-size: 30px;
-    font-weight: 900;
-    margin-bottom: 1rem;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-  }
-
-button {
+.delete button{
     cursor: pointer;
     padding: 5px 10px;
     margin-right: 5px;
-    background-color:#4F6F52 ;
-    color: #fff;
+    color: #e60000;
     border: none;
-    border-radius: 3px;
+    font-size: 30px;
+    display: flex;
+    background-color: #F4F4F4;
+
+    }
+.edit button:hover {
+    transform: scale(1.2);
+  }
+  .delete button:hover {
+    transform: scale(1.2);
+  }
+.edit button{
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-left: 10px;
+    color: #4F6F52;
+    border: none;
+    font-size: 30px;
+    display: flex;
+    float: left;
+    background-color: #F4F4F4;  
 }
 
-button:hover {
-    background-color:#4F6F52;
-}
+h3 {
+    color: #020202;
+    display: block;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+  }
+  p2{
+    font-family: 'Recursive', sans-serif;
+        font-size:20px ;
+
+  }
+ 

@@ -48,20 +48,10 @@ function updateTaskContent(index) {
 
         const table = document.createElement("table");
         table.innerHTML = `
-        <h3>Tasklist</h3>
-            <tr>
-                <th>Task</th>
-                <th>Description</th>
-                <th>Actions</th>
-            </tr>
-            <tr>
-                <td>${task.task}</td>
-                <td>${task.description}</td>
-                <td>
-                    <button onclick="openEditModal(${index})"><i class="fa-solid fa-pen-to-square"></i></button>
-                    <button onclick="deleteTask(${index})"><i class="fa-solid fa-trash"></i></button>
-                </td>
-            </tr>
+        
+               <h3> ${task.task} <div class="edit"><button onclick="openEditModal(${index})"><i class="fa-solid fa-pen-to-square"></i></button></div>
+               <div class="delete"><button onclick="deleteTask(${index})"><i class="fa-solid fa-trash"></i></button></div></h3>
+                <p2>${task.description}</p2>
         `;
 
         introContainer.innerHTML = "";
